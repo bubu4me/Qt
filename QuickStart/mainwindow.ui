@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>977</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>QuickStart</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>119</y>
+      <width>951</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>快捷键盘</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_Info">
+     <attribute name="title">
+      <string>系统信息</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>977</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <addaction name="action_StartMenu"/>
+    <addaction name="action_Taskmgr"/>
+    <addaction name="action_ControlPanel"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>皮肤</string>
+     </property>
+     <addaction name="action_LightSkin"/>
+     <addaction name="action_NightSkin"/>
+    </widget>
+    <addaction name="menu_4"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_Quit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_StartMenu">
+   <property name="text">
+    <string>打开开始菜单文件夹</string>
+   </property>
+  </action>
+  <action name="action_Taskmgr">
+   <property name="text">
+    <string>打开任务管理器</string>
+   </property>
+  </action>
+  <action name="action_ControlPanel">
+   <property name="text">
+    <string>打开控制面板</string>
+   </property>
+  </action>
+  <action name="action_Manage">
+   <property name="text">
+    <string>打开设备管理器</string>
+   </property>
+  </action>
+  <action name="action_NightSkin">
+   <property name="text">
+    <string>夜间模式</string>
+   </property>
+  </action>
+  <action name="action_LightSkin">
+   <property name="text">
+    <string>日间模式</string>
+   </property>
+   <property name="toolTip">
+    <string>日间模式</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

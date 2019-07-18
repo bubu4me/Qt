@@ -1,0 +1,157 @@
+.QWidget {
+   background-color: #242635;
+}
+
+QStatusBar::item {
+    border-width: 1;
+    border-color:  #FFFFFF;
+    border-style: solid;
+    border-radius: 2;
+}
+
+QComboBox, QLineEdit, QSpinBox, QTextEdit, QListView {
+    background-color:  #FFFFFF;
+    selection-color:  #FFFFFF;
+    selection-background-color:  #FFFFFF;
+}
+
+QTableWidget {
+ color:#FFFFFF;
+border-width: 1;
+border-color:  #242635;
+border-style: solid;
+border-radius: 4;
+ background-color: #242635;
+}
+
+
+QToolButton { /* all types of tool button */
+    color:/*rgb(255,255,255);*/#35a3ff;
+    font: 75 17pt "Microsoft YaHei";
+    font-weight:bold;
+    font-size:17px;
+    border-top: 3px solid qlineargradient(x1:0, y1:0, x2:1, y2:0,
+    stop:0 #557395, stop:1 #004490);
+    border-right:3px solid #004490;
+    border-radius: 6px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #3a426c, stop: 1 #373d62);/*the color Pur*/
+}
+
+QToolButton:hover {
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                   stop: 0 #0769bc, stop: 1 #004490);
+}
+
+QToolButton:pressed {
+   background-color: #0769bc
+}
+
+
+QTabWidget::pane {
+    border-top: 3px solid qlineargradient(x1: 0, y1: 0, x2: 0.8, y2: 0,
+    stop: 0 #0769bc, stop: 1 #004490);
+
+    border-right: 3px solid #004490;
+    border-left: 2px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.7,
+    stop: 0 #0769bc, stop: 1 #02366f);
+    border-bottom: 2px solid #02366f;
+    background-color: green;
+    left:5px;
+    right:5px;
+    bottom:5px;
+}
+
+
+
+ QTabWidget::tab-bar {
+     alignment:left;
+     left: 5px; /* move to the right by 5px */
+     border: 2px solid #FFFFFF;
+     border-bottom-color: #FFFFFF; /* same as the pane color */
+ }
+
+QTabWidget::tab {
+border-color: black;
+border-width: 3px;
+border-bottom:none;
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+        background:transparent;
+        color:black;
+        min-width:30ex;
+        min-height:10ex;
+}
+
+QTabWidget::tab:!selected:hover{
+    width:100px;
+    height:24px;
+    border:3px solid #C589C3;
+    background:rgb(255, 255, 255, 100);
+    border-color: black;
+}
+
+QTabBar::tab {/*tab color set*/
+
+                                background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                                            stop: 0 #3a426c, stop: 0.4 #373d62,
+                                                            stop: 0.6 #373d62, stop: 1.0 #3a426c);
+    border: 2px solid #0769bc;
+     color:rgb(255,255,255);
+     font:  "Microsoft YaHei";
+     /*set front*/
+    border-bottom-color: #3a426c;  /*same as the pane color */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 8ex;
+    padding: 2px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                            stop: 0 #0769bc, stop: 0.4 #0769bc,
+                            stop: 0.5 #0769bc, stop: 1.0 #0769bc);
+border-bottom-color: #0769bc;  /*same as the pane color */
+}
+
+
+ /* Style the tab using the tab sub-control. Note that
+     it reads QTabBar _not_ QTabWidget */
+
+
+QMenuBar {
+    background-color: #004490;
+    color:rgb(255,255,255);
+
+}
+
+QMenuBar::item {
+    spacing: 3px; /* spacing between menu bar items */
+    padding: 1px 4px;
+    background: transparent;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected { /* when selected using mouse or keyboard */
+    background: #a8a8a8;
+}
+
+QMenuBar::item:pressed {
+    background: #888888;
+}
+QStatusBar {
+     background: #222433;/*on the bot*/
+ }
+
+ QToolBar {
+     border-top: 3px solid #242635;/*unkno line?*/
+     background: #242635;/*on the top*/
+     spacing: 3px; /* spacing between items in the tool bar */
+ }
+
+ QToolBar::handle {
+     image: url(handle.png);
+ }
+
+
+

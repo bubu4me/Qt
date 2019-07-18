@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/qss">
+        <file>Qss2.qss</file>
+        <file>Qss1.qss</file>
+    </qresource>
+    <qresource prefix="/image">
+        <file>Grass.jpg</file>
+        <file>Grass2.jpg</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>AppIcon.ico</file>
+    </qresource>
+</RCC>
