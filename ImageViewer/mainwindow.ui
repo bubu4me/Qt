@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>681</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="Btn_open">
+        <property name="text">
+         <string>open</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Btn_reset">
+        <property name="text">
+         <string>reset</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="Btn_pre">
+        <property name="text">
+         <string>&lt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Btn_next">
+        <property name="text">
+         <string>&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>681</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGrayScale_Transformation">
+    <property name="title">
+     <string>Gray-Scale Transformation</string>
+    </property>
+    <addaction name="actionrgb2gray"/>
+    <addaction name="actionreverse"/>
+    <addaction name="actionlog"/>
+    <addaction name="actioncontrast_strectch"/>
+    <addaction name="actionhistogram"/>
+    <addaction name="actioncolor_histogram"/>
+   </widget>
+   <widget class="QMenu" name="menuSpatial_Filter">
+    <property name="title">
+     <string>Spatial Filter</string>
+    </property>
+    <addaction name="actionLinear"/>
+    <addaction name="actionGauss"/>
+    <addaction name="actionBilateral"/>
+    <addaction name="actionMedian"/>
+    <addaction name="actionMorphology_Operation"/>
+    <addaction name="actionFrequency_Domain_Filter"/>
+   </widget>
+   <widget class="QMenu" name="menuSpectrum">
+    <property name="title">
+     <string>Spectrum</string>
+    </property>
+    <addaction name="actionshow_spectrum"/>
+   </widget>
+   <widget class="QMenu" name="menuAffine_Transform">
+    <property name="title">
+     <string>Affine Transform</string>
+    </property>
+    <addaction name="actionAffine_Transform"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuGrayScale_Transformation"/>
+   <addaction name="menuSpatial_Filter"/>
+   <addaction name="menuSpectrum"/>
+   <addaction name="menuAffine_Transform"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionrgb2gray">
+   <property name="text">
+    <string>rgb2gray</string>
+   </property>
+  </action>
+  <action name="actionlog">
+   <property name="text">
+    <string>log</string>
+   </property>
+  </action>
+  <action name="actionreverse">
+   <property name="text">
+    <string>reverse</string>
+   </property>
+  </action>
+  <action name="actioncontrast_strectch">
+   <property name="text">
+    <string>contrast strectch</string>
+   </property>
+  </action>
+  <action name="actionhistogram">
+   <property name="text">
+    <string>gray histogram</string>
+   </property>
+  </action>
+  <action name="actioncolor_histogram">
+   <property name="text">
+    <string>color histogram</string>
+   </property>
+  </action>
+  <action name="actionLinear">
+   <property name="text">
+    <string>Linear</string>
+   </property>
+  </action>
+  <action name="actionGauss">
+   <property name="text">
+    <string>Gauss</string>
+   </property>
+  </action>
+  <action name="actionBilateral">
+   <property name="text">
+    <string>Bilateral</string>
+   </property>
+  </action>
+  <action name="actionMedian">
+   <property name="text">
+    <string>Median</string>
+   </property>
+  </action>
+  <action name="actionMorphology_Operation">
+   <property name="text">
+    <string>Morphology Operation</string>
+   </property>
+  </action>
+  <action name="actionshow_spectrum">
+   <property name="text">
+    <string>Show Spectrum</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Spectrum</string>
+   </property>
+  </action>
+  <action name="actionAffine_Transform">
+   <property name="text">
+    <string>Affine Transform</string>
+   </property>
+   <property name="toolTip">
+    <string>Affine Transform</string>
+   </property>
+  </action>
+  <action name="actionFrequency_Domain_Filter">
+   <property name="text">
+    <string>Frequency Domain Filter</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="text">
+    <string>Save As</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

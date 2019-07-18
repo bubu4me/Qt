@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>Grass.jpg</file>
+        <file>Grass2.jpg</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>Qss2.qss</file>
+        <file>Qss1.qss</file>
+        <file>Qss3.qss</file>
+        <file>Qss4.qss</file>
+        <file>Qss5.qss</file>
+        <file>Qss6.qss</file>
+        <file>Qss7.qss</file>
+    </qresource>
+</RCC>
